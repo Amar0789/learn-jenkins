@@ -1,3 +1,4 @@
+pipeline {
         stage('Approval'){
             input {
                 message "Should we continue?"
@@ -11,3 +12,4 @@
                 echo "Hello, ${PERSON}, nice to meet you."
             }
         }
+    }    
