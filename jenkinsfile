@@ -1,6 +1,10 @@
 pipeline{
     agent any
 
+    options{
+        timeout (time: 10 , unit: 'SECONDS')
+    }
+
     stages{
         stage('build'){
             steps{
@@ -19,7 +23,8 @@ pipeline{
         }
         stage('ditch'){
             steps{
-                echo "ditching"
+                sh 'echo something'
+                sh 'sleep 10'
             }
         }        
     }
