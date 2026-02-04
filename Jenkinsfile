@@ -16,6 +16,8 @@ pipeline{
         string(name: 'version', defaultValue: '1.0.0', description: 'This is the version of the build')
         choice(name: 'Env Type', choices: ['PROD','DEV','QA'], description: 'PLease select env')
         booleanParam(name: 'deploy', defaultValue: 'FALSE')
+        text(name: 'Name', defaultValue: 'ex:stephen', description: 'Enter your username')
+        password(name: 'user password', defaultValue: '*********', description:'Enter your password')
     }
     stages{
         stage('one'){
