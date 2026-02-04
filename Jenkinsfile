@@ -13,7 +13,7 @@ pipeline{
     }
 
     parameters{
-        string(name: 'version', defaultvalue:'1', description: 'app verion')
+        string(name: 'version', defaultValue:'1', description: 'app verion')
     }
 
     stages{
