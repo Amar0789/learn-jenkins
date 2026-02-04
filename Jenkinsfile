@@ -30,17 +30,12 @@ pipeline{
                 echo 'pipeline failure'
             }
         }
-        stage('Approval'){
-             input {
-                 message "Should we continue?"
-                 ok "Yes, we should."
-                 submitter "alice,bob"
-               }
-             steps {
-                 echo "Hello, ${PERSON}, nice to meet you."
-                }
-            }
-    }
+        stage('Approval') {
+            steps {
+                input message: 'Proceed to deploy?'
+            }   
+        }   
+        
     post{
         always{
             echo "It runs always"
