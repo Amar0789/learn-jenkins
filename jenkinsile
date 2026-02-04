@@ -1,10 +1,9 @@
+def buildApp(name) {
+    echo "Building ${name}"
+}
+
 node {
-
-        stage("Build svc") {
-          def services = ['auth', 'order', 'payment']
-
-          for (svc in services) {
-            echo "hello"
-        }
+    stage('Build') {
+        buildApp('my-service')
     }
 }
