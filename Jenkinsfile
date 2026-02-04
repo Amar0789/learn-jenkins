@@ -1,6 +1,14 @@
 pipeline{
     agent any
 
+    options {
+        retry(3)
+        disableConcurrentBuilds()
+        timeout(time:'10', unit:'MINUTES')
+        timestamps()
+        ansicolour('xterm')
+    }
+
     environment{
         envv = 'prod not'
     }
