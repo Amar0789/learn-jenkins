@@ -27,7 +27,7 @@ pipeline{
         }
         stage('Two'){
             steps{
-                echo "From ${envv}"
+                error 'pipeline failure'
             }
         }
     }
