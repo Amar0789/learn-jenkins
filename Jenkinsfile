@@ -12,6 +12,10 @@ pipeline{
         envv = 'prod not'
     }
 
+    parameters{
+        string(name: 'version', defaultvalue:'1', description: 'app verion')
+    }
+
     stages{
         stage('one'){
             steps{
