@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     environment{
-        envv = 'prod'
+        envv = 'prod not'
     }
 
     stages{
