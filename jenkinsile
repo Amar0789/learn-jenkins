@@ -1,9 +1,12 @@
-def buildApp(name) {
-    echo "Building ${name}"
-}
-
 node {
-    stage('Build') {
-        buildApp('my-service')
+    stage('Parallel Jobs') {
+        parallel(
+            unitTests: {
+                sh 'echo Running unit tests'
+            },
+            integrationTests: {
+                sh 'echo Running integration tests'
+            }
+        )
     }
 }
