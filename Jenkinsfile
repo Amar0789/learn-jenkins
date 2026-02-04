@@ -32,7 +32,7 @@ pipeline{
         }
         stage('Approval') {
             steps {
-                input message: 'ok', ok: 'build'
+                input message: 'ok', ok: 'build', abort: 'stop'
             }   
         }   
     }    
