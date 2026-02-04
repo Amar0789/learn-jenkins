@@ -35,7 +35,7 @@ pipeline{
                 input message: 'Proceed to deploy?'
             }   
         }   
-        
+    }    
     post{
         always{
             echo "It runs always"
