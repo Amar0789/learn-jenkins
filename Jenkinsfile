@@ -1,6 +1,10 @@
 pipeline{
     agent any
 
+    environment{
+        envv = 'prod'
+    }
+
     stages{
         stage('one'){
             steps{
@@ -9,7 +13,7 @@ pipeline{
         }
         stage('Two'){
             steps{
-                echo "From Two"
+                echo "From ${envv}"
             }
         }
     }
