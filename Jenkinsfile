@@ -12,7 +12,7 @@ pipeline{
         envv = 'prod not'
     }
 
-    parameters{
+    parameters {
         string(name: 'version', defaultValue:'1', description: 'app verion')
     }
 
