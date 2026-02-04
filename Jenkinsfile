@@ -4,9 +4,9 @@ pipeline{
     options {
         retry(3)
         disableConcurrentBuilds()
-        timeout(time:'10', unit:'MINUTES')
+        timeout(time:10, unit:'MINUTES')
         timestamps()
-        ansicolour('xterm')
+        ansicolor('xterm')
     }
 
     environment{
