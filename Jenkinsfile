@@ -27,7 +27,7 @@ pipeline{
         }
         stage('Two'){
             steps{
-                error 'pipeline failure'
+                echo 'pipeline failure'
             }
         }
     }
