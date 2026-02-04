@@ -1,9 +1,10 @@
 node {
-    def services = ['auth', 'order', 'payment']
 
-    for (svc in services) {
-        stage("Build s") {
-            echo "Building ${svc}"
+        stage("Build svc") {
+          def services = ['auth', 'order', 'payment']
+
+          for (svc in services) {
+            echo "hello"
         }
     }
 }
