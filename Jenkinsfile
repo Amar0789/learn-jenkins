@@ -14,7 +14,7 @@ pipeline{
 
     parameters {
         string(name: 'version', defaultValue: '1.0.0', description: 'This is the version of the build')
-        choice(name: 'Env Type', choices ['PROD','DEV','QA'], description:'PLease select env')
+        choice(name: 'Env Type', choices ['PROD','DEV','QA'], description: 'PLease select env')
     }
     stages{
         stage('one'){
