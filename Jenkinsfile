@@ -26,5 +26,14 @@ pipeline{
                 echo "Hi I am from Five"
             }
         }
+    post{
+        always{
+            echo "THis is from always"
+        }
+
+        success{
+            echo "This gets executed when only script gets succeeded"
+        }
+    }
     }
 }
