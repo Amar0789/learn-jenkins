@@ -4,11 +4,10 @@ pipeline{
     options {
         retry(3)
         disableConcurrentBuilds()
-        timeout(time:10, unit:'MINUTES')
         timestamps()
+        timeout(time: 10, unit:'SECONDS')
         ansiColor('xterm')
     }
-
     environment{
         envv = 'prod not'
     }
