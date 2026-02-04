@@ -18,7 +18,7 @@ pipeline{
     stages{
         stage('one'){
             steps{
-                echo "From one"
+                echo "From param.version"
             }
         }
         stage('Two'){
