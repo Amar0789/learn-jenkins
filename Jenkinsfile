@@ -28,11 +28,11 @@ pipeline{
         }
     post{
         always{
-            echo "THis is from always"
+            echo 'THis is from always'
         }
 
         success{
-            echo "This gets executed when only script gets succeeded"
+            echo 'This gets executed when only script gets succeeded'
         }
     }
     }
