@@ -3,19 +3,28 @@ pipeline{
     stages{
         stage('one'){
             steps{
-                echo "Hi, I am from stage 1"
+                echo "Hi I am from one"
             }
         }
-        stage('two'){
+        stage('Two'){
             steps{
-                echo "Hi, I am from stage 2"
+                echo "Hi I am from Two"
             }
         }
-        stage('three'){
+        stage('Three'){
             steps{
-                echo "Hi, I am from stage 3"
+                echo "Hi I am from Three"
             }
         }
-
+        stage('Four'){
+            steps{
+                echo "Hi I am from Four"
+            }
+        }
+        stage('Five'){
+            steps{
+                echo "Hi I am from Five"
+            }
+        }
     }
 }
