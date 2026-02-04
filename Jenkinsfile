@@ -32,7 +32,7 @@ pipeline{
         }
         stage('Approval') {
             steps {
-                input message: 'Proceed to deploy?'
+                input message: 'ok'
             }   
         }   
     }    
